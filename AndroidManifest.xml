@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.jtb.alogcat"
-    android:versionCode="43"
-    android:versionName="2.6.1" >
+    android:versionCode="45"
+    android:versionName="3.0.0" >
 
     <uses-sdk
-        android:minSdkVersion="3"
-        android:targetSdkVersion="18" />
+        android:minSdkVersion="23"
+        android:targetSdkVersion="27" />
 
     <uses-permission android:name="android.permission.READ_LOGS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -29,15 +29,10 @@
             android:launchMode="singleTop" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
-                <category android:name="android.intent.category.LAUNCHER" />
-
                 <action android:name="org.jtb.alogcat.intent.START" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
